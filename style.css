@@ -1,0 +1,79 @@
+:root {
+    --main-colour: rgb(247, 240, 116);
+    --secondary-colour: rgb(178, 148, 0);
+    --text-colour: #333;
+    --title-colour: rgb(243, 185, 62);
+    --background: bisque;
+    --font-main: 'Raleway', sans-serif;
+    --font-fun: cursive;
+}
+
+body {
+    margin: 0;
+    background-color: var(--background);
+    font-family: var(--font-main);
+    color: var(--text-colour);
+}
+
+#Header {
+    background-color: var(--main-colour);
+    border-bottom: 5px solid var(--secondary-colour);
+    padding: 20px;
+    text-align: center;
+}
+
+#logo-title {
+    font-family: var(--font-fun);
+    font-size: 3em;
+    color: var(--title-colour);
+    -webkit-text-stroke: 1px black;
+    text-shadow:
+    2px 2px 0 #000,
+    -2px 2px 0 #000,
+    2px -2px 0 #000,
+    -2px -2px 0 #000;
+}
+
+.slogan {
+    font-style: italic;
+    margin-top: 0;
+    color: #444;
+}
+
+#menu {
+    padding: 30px 20px;
+    background-color: #fff5dc;
+    border-top: 2px dashed var(--secondary-colour);
+    border-bottom: 2px dashed var(--secondary-colour);
+    max-width: 600px;
+    margin: 30px auto;
+    border-radius: 10px;
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.1);
+}
+
+#menu h2 {
+    text-align: center;
+    color: var(--secondary-colour);
+    font-family: var(--font-fun);
+}
+
+#menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+#menu li {
+    font-size: 1.2em;
+    padding: 8px 0;
+    border-bottom: 1px dotted #aaa;
+}
+
+#coming-soon {
+    text-align: center;
+    font-size: 3em;
+    opacity: 0.4;
+    margin: 60px 0 30px;
+    font-family: var(--font-fun); /* optional: same fun font as title */
+    color: #000;
+}
