@@ -4,7 +4,14 @@
     <meta charset="UTF-8">
     <title>Corn Buddies</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Chewy&family=Raleway&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS (local) -->
+    <link rel="stylesheet" href="bootstrap-4.4.1-dist/css/bootstrap.min.css">
+
+    <!-- Your custom CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -24,14 +31,24 @@
 
     <!-- MAIN CARD -->
     <main class="container">
-        <div class="content-card">
-            <div class="card-header justify-content-center">
-                <h2 class="justify-content-center" > Welcome to </h2>
-                <img class="Logo-text" src="trans-logo.png">
+        <div class="content-card text-center">
+            <div class="card-header">
+                <h2>Welcome to</h2>
             </div>
-            <!-- Your content goes here -->
+            <div class="row justify-content-center">
+                <div class="col-4">
+                    <img class="Logo-text img-fluid" src="trans-logo.png" alt="Logo 1">
+                </div>
+                <div class="col-4">
+                    <img class="Logo-text img-fluid" src="trans-logo.png" alt="Logo 2">
+                </div>
+                <div class="col-4">
+                    <img class="Logo-text img-fluid" src="trans-logo.png" alt="Logo 3">
+                </div>
+            </div>
         </div>
-    </main>
+</main>
 
+<script src="bootstrap-4.4.1-dist/js/bootstrap.min.js"></script>
 </body>
 </html>
