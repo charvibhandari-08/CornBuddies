@@ -62,33 +62,35 @@ body {
     border-radius: 35px;
     min-height: 60vh;
     box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+    padding: 30px; /* IMPORTANT so content doesn’t touch edges */
 }
 
 /* CARD HEADER */
 .card-header {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 20px;
+    align-items: center;        /* horizontal centre */
+    justify-content: center;    /* vertical balance */
     text-align: center;
+    gap: 12px;
+    margin-bottom: 25px;
 }
 
+/* HEADER TEXT */
 .card-header h2 {
-    font-family: 'Raleway', sans-serif;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     font-weight: 600;
     color: #444;
 }
 
-/* LOGO IMAGE */
+/* LOGO IMAGE — HARD LIMITED */
 .Logo-text {
-    max-width: 220px;
-    width: 80%;
+    width: 100%;
+    max-width: 220px;   /* ← stops it going giant */
     height: auto;
-    border-radius: 10px;
+    object-fit: contain;
+    display: block;
 }
-
 
 /* DESKTOP VERSION */
 @media (min-width: 768px) {
@@ -98,15 +100,6 @@ body {
         justify-content: space-between;
         align-items: center;
     }
-    
-    .card-header h2 {
-        font-size: 1.5rem;
-    }
-
-    .Logo-text {
-        max-width: 300px;
-    }
-}
 
     .nav-logo {
         font-size: 1.8rem;
@@ -124,5 +117,14 @@ body {
     .content-card {
         min-height: 70vh;
         border-radius: 45px;
+        padding: 40px;
+    }
+
+    .card-header h2 {
+        font-size: 1.5rem;
+    }
+
+    .Logo-text {
+        max-width: 280px;
     }
 }
