@@ -101,6 +101,24 @@ body {
     display: block;
 }
 
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.card-img-top {
+    height: 180px;
+    object-fit: cover;
+}
+
+.card {
+    border-radius: 12px;
+}
+
+.badge {
+    margin-right: 5px;
+}
+
+
 /* DESKTOP VERSION */
 @media (min-width: 768px) {
 
