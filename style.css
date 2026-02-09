@@ -1,10 +1,11 @@
 :root {
-    --bg-yellow: #efe19a;
-    --card-bg: #f7f1dc;
+    --bg-page: #fff6e5;
+    --bg-main-card: #f7f1dc;
+    --bg-menu-card: #fffaf2;
     --accent-green: #25af5c;
     --text-dark: #222;
-    --font-main: 'Raleway', sans-serif;
-    --font-fun: cursive;
+    --text-muted: #444;
+    --font-main: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 /* RESET */
@@ -14,9 +15,11 @@
     box-sizing: border-box;
 }
 
+/* BODY */
 body {
-    background: var(--bg-yellow);
+    background-color: var(--bg-page);
     font-family: var(--font-main);
+    color: var(--text-dark);
 }
 
 /* NAVBAR */
@@ -28,19 +31,11 @@ body {
     background-color: #fbf2c6;
 }
 
-.logo-img {
-    width: 100%;
-    max-width: 150px;
-    height: auto;
-    object-fit: contain;
-    border: 0.1px solid transparent;
-}
-
 .nav-logo {
-    font-family: var(--font-fun);
     color: var(--accent-green);
-    font-size: 2rem;
-    line-height: 1.1;
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 1.2;
 }
 
 .nav-links {
@@ -58,78 +53,82 @@ body {
 
 .hamburger {
     font-size: 1.6rem;
+    cursor: pointer;
 }
 
-/* MAIN AREA */
+/* MAIN CONTAINER */
 .container {
     padding: 20px;
 }
 
-/* BIG CARD */
+/* BIG MAIN CARD */
 .content-card {
-    background: var(--card-bg);
-    border-radius: 35px;
-    min-height: 60vh;
+    background-color: var(--bg-main-card);
+    border-radius: 30px;
+    padding: 35px;
     box-shadow: 0 10px 25px rgba(0,0,0,0.12);
-    padding: 30px; /* IMPORTANT so content doesn’t touch edges */
 }
 
-/* CARD HEADER */
-.card-header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;        /* horizontal centre */
-    justify-content: center;    /* vertical balance */
+/* SECTION HEADINGS */
+.content-card h2 {
     text-align: center;
-    gap: 12px;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
+    font-size: 1.5rem;
+    color: var(--text-muted);
 }
 
-/* HEADER TEXT */
-.card-header h2 {
-    font-size: 1.3rem;
+/* MENU CARDS */
+.menu-card {
+    background-color: var(--bg-menu-card);
+    border: none;
+    border-radius: 16px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+    height: 100%;
+}
+
+/* MENU CARD IMAGE */
+.card-img-top {
+    height: 160px;
+    object-fit: cover;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+
+/* MENU CARD TEXT */
+.card-title {
+    font-size: 1.05rem;
     font-weight: 600;
-    color: #444;
+    margin-bottom: 8px;
 }
 
-/* LOGO IMAGE — HARD LIMITED */
+.card-text {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+}
+
+/* DIET TAGS */
+.badge {
+    margin-right: 6px;
+    margin-top: 6px;
+}
+
+/* LOGO IMAGE (HOME PAGE) */
 .Logo-text {
     width: 100%;
-    max-width: 220px;   /* ← stops it going giant */
+    max-width: 220px;
     height: auto;
     object-fit: contain;
     display: block;
+    margin: 0 auto;
 }
 
-body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-.card-img-top {
-    height: 180px;
-    object-fit: cover;
-}
-
-.card {
-    border-radius: 12px;
-}
-
-.badge {
-    margin-right: 5px;
-}
-
-
-/* DESKTOP VERSION */
+/* DESKTOP ADJUSTMENTS */
 @media (min-width: 768px) {
 
     .navbar {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-    }
-
-    .nav-logo {
-        font-size: 1.8rem;
     }
 
     .nav-links {
@@ -142,13 +141,12 @@ body {
     }
 
     .content-card {
-        min-height: 70vh;
-        border-radius: 45px;
-        padding: 40px;
+        padding: 45px;
+        border-radius: 40px;
     }
 
-    .card-header h2 {
-        font-size: 1.5rem;
+    .content-card h2 {
+        font-size: 1.7rem;
     }
 
     .Logo-text {
