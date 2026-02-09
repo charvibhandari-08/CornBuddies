@@ -1,10 +1,10 @@
 :root {
     --bg-yellow: #efe19a;
     --card-bg: #f7f1dc;
-    --accent-green: #2c7a4b;
+    --accent-green: #25af5c;
     --text-dark: #222;
     --font-main: 'Raleway', sans-serif;
-    --font-fun: 'Chewy', cursive;
+    --font-fun: cursive;
 }
 
 /* RESET */
@@ -25,6 +25,15 @@ body {
     flex-direction: column;
     gap: 10px;
     padding: 20px;
+    background-color: #fbf2c6;
+}
+
+.logo-img {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    object-fit: contain;
+    border: 0.1px solid transparent;
 }
 
 .nav-logo {
